@@ -27,6 +27,7 @@ def powersite():
 
 def jiusan():
     nu = 0
+    powersite()
 
     for i in range(row):
         for j in  range(g):
@@ -41,5 +42,4 @@ def jiusan():
                 file_handle.write('\n')
 
 if __name__ =='__main__':
-    powersite()
     jiusan()
