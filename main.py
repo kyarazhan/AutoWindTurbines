@@ -1,0 +1,3 @@
+from Coords import*
+
+XYZ()
