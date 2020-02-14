@@ -1,3 +1,5 @@
+#global x0
+#global y0
 def XYZ():
     print('请输入起始XY坐标，X坐标为8位数，Y坐标为7位数:')
 
@@ -13,12 +15,12 @@ def XYZ():
             else:
                 print("初次打印 X%d"%x0 +"  " + "Y%d"%y0)
                 return x0,y0
-                break
-                
+                #break
+
         except ValueError:
-        
             print('输入有误！请重新输入')
-            
+
+    print("二次打印 X%d"%x0 +"  " + "Y%d"%y0)
             
 if __name__=='__main__':
     XYZ()
