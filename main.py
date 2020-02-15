@@ -1,10 +1,13 @@
-from Coords import*
-#from DistanceSet import*
-#from RowColumn import*
-#from WindTurbine import*
-#from Coords import XYZ
+#import Coords
+import DistanceSet
 
-XYZ()
-#zz = x0+y0
-#print(zz)
-#print("二次打印 X%d"%x0 +"  " + "Y%d"%y0)
+#zz = Coords.x0+Coords.y0
+#hh = Coords.x0
+#gg = Coords.y0
+
+zz = DistanceSet.x0+DistanceSet.y0
+hh = DistanceSet.x0
+gg = DistanceSet.y0
+
+print(str(zz))
+print("mian打印X%s"%hh + "  " + "main打印Y%s"%gg)

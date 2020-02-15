@@ -1,26 +1,40 @@
-#global x0
-#global y0
-def XYZ():
+
+class XYZ():
     print('请输入起始XY坐标，X坐标为8位数，Y坐标为7位数:')
+    global x0
+    global y0
 
     while True:
+        #x0, y0 = input("请输入两个数：\n").split()
+        x0 = input("请输入X坐标：\n")
         try:
-            x0, y0 = map(int, input().split())
-            if x0 == 0 or y0 == 0:
+            if x0 == 0 :
                 print("坐标不能全为 〇 ，请重新输入！")
                 continue
-            elif 8 != len(str(x0)) or 7 != len(str(y0)):
-                print("X坐标为8位数，Y坐标为7位数，请重新输入！")
+            elif 8 != len(str(x0)):
+                print("X坐标为8位数，请重新输入！")
                 continue
-            else:
-                print("初次打印 X%d"%x0 +"  " + "Y%d"%y0)
-                return x0,y0
-                #break
-
+            elif False == x0.isdigit() :
+                print("输入有误！")
+                continue
         except ValueError:
-            print('输入有误！请重新输入')
+            print("输入有误！")
+            continue
+        y0 = input("请输入Y坐标：\n")
+        try:
+            if y0 == 0:
+                print("坐标不能全为 〇 ，请重新输入！")
+                continue
+            elif 7 != len(str(y0)):
+                print("Y坐标为7位数，请重新输入！")
+                continue
+            elif False == y0.isdigit():
+                print("输入有误！")
+                continue
+        except ValueError:
+            print("输入有误！")
+            continue
+        break
 
-    print("二次打印 X%d"%x0 +"  " + "Y%d"%y0)
-            
-if __name__=='__main__':
+if __name__ == '__main__':
     XYZ()
