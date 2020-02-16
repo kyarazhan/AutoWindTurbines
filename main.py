@@ -1,13 +1,12 @@
 #import Coords
+#import WindTurbine
+#import RowColumn
 import DistanceSet
 
-#zz = Coords.x0+Coords.y0
-#hh = Coords.x0
-#gg = Coords.y0
 
-zz = DistanceSet.x0+DistanceSet.y0
-hh = DistanceSet.x0
-gg = DistanceSet.y0
+zz = DistanceSet.front_back+DistanceSet.left_right
+hh = DistanceSet.front_back
+gg = DistanceSet.left_right
 
 print(str(zz))
 print("mian打印X%s"%hh + "  " + "main打印Y%s"%gg)
