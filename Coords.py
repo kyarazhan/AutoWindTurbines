@@ -6,7 +6,7 @@ class XYZ():
 
     while True:
         try:
-            x0, y0 = input("X坐标为8位数，Y坐标为7位数:\n").split()
+            x0, y0 = map(int,input("X坐标为8位数，Y坐标为7位数:\n").split())
             if x0 == 0 or y0 == 0:
                 print('输入有误！请重新输入！')
                 continue
