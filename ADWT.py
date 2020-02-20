@@ -1,5 +1,6 @@
 import os
 import sys
+import math
 
 class powersite():
     global row
@@ -8,6 +9,7 @@ class powersite():
     global y0
     global xc
     global yc
+    global getangle
     print('开始输入风电场及风机基本参数\n\n参数之间请以空格键隔开！\n')
     print('第一项：请输入起始XY坐标')
     while True:
@@ -73,9 +75,24 @@ class powersite():
 
     xc = int(right*r)
     yc = int(left*r)
+"""    
+    print("第五项：请输入主风向")
+    while True:
+        getangle = input("请输入正整数：")
+        if getangle.isdigit():
+            break
+        else:
+            print("继续输入")
 
+def get_angle():
+    while True:
+        try:
+            if getangle >
+
+"""
 def jiusan():
     nu = 0
+
 
     for i in range(row):
         for j in  range(g):
@@ -83,11 +100,13 @@ def jiusan():
             nu += 1
             result = 'T{} {} {}\t'.format(int(t),int(x0+i*xc),int(y0+j*yc))
 
-            print("外部打印%s"%result)
+            #print("外部打印%s"%result)
 
             with open('result.txt','a') as file_handle:
                 file_handle.write(result)
                 file_handle.write('\n')
+
+print("输出结果在目录下result.txt文件")
 
 if __name__ =='__main__':
     powersite()
