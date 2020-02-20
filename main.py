@@ -13,7 +13,7 @@ def calculate():
             result = 'T{} {} {}\t'.format(t,Coords.x0+i*WindTurbine.hub*DistanceSet.front_back,\
                                           Coords.y0+j*WindTurbine.hub*DistanceSet.left_right)
 
-            print("外部打印%s"%result)
+            #print("外部打印%s"%result)
 
             with open('result.txt','a') as file_handle:
                 file_handle.write(result)
