@@ -2,7 +2,6 @@
 [![GitHub Stars](https://img.shields.io/github/stars/kyarazhan/AutoWindTurbines.svg?style=flat-square&label=Stars&logo=github)](https://github.com/kyarazhan/AutoWindTurbines/stargazers)
 [![GitHub Forks](https://img.shields.io/github/forks/kyarazhan/AutoWindTurbines.svg?style=flat-square&label=Forks&logo=github)](https://github.com/kyarazhan/AutoWindTurbines/fork)
 
-Build OpenWrt using GitHub Actions
 
 # 自动风机排布
 
